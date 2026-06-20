@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.calcolatorestipendio-netto.it/sitemap.xml
+Sitemap: https://darioannis93-lab.github.io/calcolatori-italia/sitemap.xml
