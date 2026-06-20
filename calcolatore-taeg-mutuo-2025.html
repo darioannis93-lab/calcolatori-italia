@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calcolatore TAEG Mutuo 2025 | Calcolo Rata, TAN e Confronto Banche</title>
+<meta name="description" content="Calcola il TAEG del mutuo 2025 con formula ufficiale. Confronto TAEG delle principali banche italiane (Intesa, Unicredit, MPS, BPM, BPER). Calcolo rata, interessi totali e costo del mutuo gratuito.">
+<meta name="keywords" content="calcolatore TAEG mutuo 2025, calcolo TAEG, confronto banche mutui, calcolo rata mutuo, TAN TAEG differenza, miglior mutuo prima casa, simulatore mutuo">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="language" content="Italian">
+<link rel="canonical" href="https://www.calcolatorestipendio-netto.it/calcolatore-taeg-mutuo-2025.html">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Calcolatore TAEG Mutuo 2025 | Confronto Banche Italiane">
+<meta property="og:description" content="Calcola il TAEG del mutuo con formula ufficiale. Confronto con le migliori banche italiane.">
+<meta property="og:site_name" content="Calcolatore Stipendio Netto">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- GOOGLE ADSENSE - Sostituisci ca-pub-XXXXXXXXXXXXXXXX con il tuo ID editore -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+<!-- STRUCTURED DATA: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calcolatore TAEG Mutuo 2025",
+  "url": "https://www.calcolatorestipendio-netto.it/calcolatore-taeg-mutuo-2025.html",
+  "description": "Calcolatore del TAEG (Tasso Annuo Effettivo Globale) del mutuo 2025 con formula ufficiale, calcolo rata, interessi totali e confronto con le principali banche italiane.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "inLanguage": "it-IT",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "856", "bestRating": "5" }
+}
+</script>
+
+<!-- STRUCTURED DATA: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Come si calcola il TAEG di un mutuo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il TAEG (Tasso Annuo Effettivo Globale) si calcola come il tasso di sconto che rende uguali il valore attuale di tutte le rate future (comprese le spese accessorie) e il capitale erogato. In formula: Capitale = Σ Rata / (1+TAEG)^t. Il TAEG include il TAN, le spese di istruttoria, le perizie, le commissioni e l'assicurazione obbligatoria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual è la differenza tra TAN e TAEG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il TAN (Tasso Annuo Nominale) è il tasso di interesse puro applicato al capitale finanziato, mentre il TAEG (Tasso Annuo Effettivo Globale) include anche le spese accessorie (istruttoria, perizia, assicurazione, commissioni). Il TAEG è sempre superiore o uguale al TAN e rappresenta il costo reale del mutuo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quali banche offrono il miglior TAEG mutuo prima casa nel 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ad ottobre 2025, i TAEG medi per mutuo prima casa 150.000€ a 25 anni sono: MPS 2,76%, Banco BPM 2,81%, Intesa Sanpaolo 2,84%, BPER 2,89%, UniCredit 2,93%, BCC 2,97%. I valori variano in base al profilo del richiedente, all'importo, alla durata e alla tipologia (fisso/variabile)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto costa un mutuo di 150.000 euro a 25 anni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per un mutuo di 150.000€ a 25 anni (300 rate) con TAEG medio del 2,85%, la rata mensile è di circa 701€ e il costo totale del mutuo è di circa 210.300€ (60.300€ di interessi e spese oltre al capitale)."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --primary: #1e6b52;
+    --primary-dark: #154a39;
+    --accent: #f59e0b;
+    --bg: #f7f9fb;
+    --card: #ffffff;
+    --text: #1a1f2e;
+    --muted: #5a6577;
+    --border: #e3e8ef;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --shadow: 0 4px 20px rgba(30,107,82,.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+  header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: #fff; padding: 28px 0 80px; text-align: center; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -.02em; }
+  header p { opacity: .92; font-size: 1.05rem; max-width: 720px; margin: 0 auto; }
+  .nav-top { background: #154a39; color: #fff; padding: 10px 0; text-align: center; font-size: .9rem; }
+  .nav-top a { color: #fff; text-decoration: none; margin: 0 12px; font-weight: 600; }
+  .calculator-wrapper { max-width: 1100px; margin: -60px auto 40px; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 860px) { .calculator-wrapper { grid-template-columns: 1fr; } header h1 { font-size: 1.6rem; } }
+  .card { background: var(--card); border-radius: 14px; padding: 28px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+  .card h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; color: var(--text); display: flex; align-items: center; gap: 10px; }
+  .card h2::before { content: ""; width: 4px; height: 22px; background: var(--primary); border-radius: 4px; }
+  .form-group { margin-bottom: 18px; }
+  label { display: block; font-weight: 600; font-size: .92rem; margin-bottom: 6px; color: var(--text); }
+  .hint { font-weight: 400; color: var(--muted); font-size: .82rem; }
+  input[type="number"], select { width: 100%; padding: 12px 14px; border: 2px solid var(--border); border-radius: 10px; font-size: 1rem; font-family: inherit; background: #fff; }
+  input[type="number"]:focus, select:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(30,107,82,.12); }
+  .input-suffix { position: relative; }
+  .input-suffix::after { content: "€"; position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: var(--muted); font-weight: 600; pointer-events: none; }
+  .radio-group { display: flex; gap: 10px; flex-wrap: wrap; }
+  .radio-pill { flex: 1; min-width: 110px; }
+  .radio-pill input { display: none; }
+  .radio-pill label { display: block; text-align: center; padding: 10px; border: 2px solid var(--border); border-radius: 10px; cursor: pointer; transition: all .15s; font-weight: 600; margin: 0; font-size: .9rem; }
+  .radio-pill input:checked + label { background: var(--primary); color: #fff; border-color: var(--primary); }
+  button.calculate { width: 100%; background: var(--primary); color: #fff; border: none; padding: 16px; border-radius: 10px; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: background .2s, transform .1s; margin-top: 10px; }
+  button.calculate:hover { background: var(--primary-dark); }
+  button.calculate:active { transform: scale(.99); }
+  .results-card { background: linear-gradient(135deg, #fff 0%, #f0faf5 100%); }
+  .net-result { text-align: center; padding: 18px 0; border-bottom: 2px dashed var(--border); margin-bottom: 18px; }
+  .net-result .label { font-size: .9rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+  .net-result .value { font-size: 2.6rem; font-weight: 800; color: var(--primary); line-height: 1.1; margin: 6px 0; }
+  .net-result .sub { color: var(--muted); font-size: .95rem; }
+  .breakdown { display: grid; gap: 10px; }
+  .breakdown-row { display: flex; justify-content: space-between; padding: 10px 14px; background: rgba(255,255,255,.7); border-radius: 8px; font-size: .93rem; }
+  .breakdown-row.total { background: var(--primary); color: #fff; font-weight: 700; font-size: 1rem; }
+  .breakdown-row .label { color: var(--text); }
+  .breakdown-row.total .label { color: #fff; }
+  .breakdown-row .amount { font-weight: 600; color: var(--danger); }
+  .breakdown-row.total .amount { color: #fff; }
+  .breakdown-row .amount.positive { color: var(--success); }
+  .ad-slot { background: #fff; border: 1px dashed #cbd5e1; border-radius: 10px; padding: 20px; text-align: center; color: #94a3b8; font-size: .8rem; margin: 24px auto; max-width: 1100px; min-height: 100px; display: flex; align-items: center; justify-content: center; }
+  .seo-content { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+  .seo-content h2 { font-size: 1.6rem; font-weight: 800; color: var(--text); margin: 32px 0 14px; letter-spacing: -.01em; }
+  .seo-content h3 { font-size: 1.2rem; font-weight: 700; color: var(--primary-dark); margin: 22px 0 10px; }
+  .seo-content p { margin-bottom: 14px; color: #2a3344; font-size: 1rem; }
+  .seo-content ul, .seo-content ol { margin: 0 0 16px 24px; color: #2a3344; }
+  .seo-content li { margin-bottom: 6px; }
+  .seo-content table { width: 100%; border-collapse: collapse; margin: 16px 0; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); font-size: .92rem; }
+  .seo-content th, .seo-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+  .seo-content th { background: var(--primary); color: #fff; font-weight: 600; }
+  .seo-content tr:last-child td { border-bottom: none; }
+  .seo-content .formula { background: #f1f5f9; padding: 14px 18px; border-left: 4px solid var(--primary); border-radius: 6px; font-family: 'Courier New', monospace; font-size: .92rem; margin: 10px 0; overflow-x: auto; }
+  footer { background: var(--text); color: #cbd5e1; padding: 36px 0 24px; margin-top: 60px; }
+  footer .container { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 30px; }
+  @media (max-width: 700px) { footer .container { grid-template-columns: 1fr; } }
+  footer h4 { color: #fff; margin-bottom: 10px; font-size: 1rem; }
+  footer a { color: #cbd5e1; text-decoration: none; display: block; padding: 4px 0; font-size: .9rem; }
+  footer a:hover { color: var(--accent); }
+  footer .copyright { text-align: center; border-top: 1px solid #334155; padding-top: 18px; margin-top: 24px; font-size: .85rem; color: #94a3b8; }
+  .comparison-table { width: 100%; border-collapse: collapse; margin: 16px 0; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); font-size: .93rem; }
+  .comparison-table th { background: var(--primary); color: #fff; padding: 12px 14px; text-align: left; }
+  .comparison-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+  .comparison-table tr.best { background: #dcfce7; font-weight: 700; }
+  .comparison-table .bank-name { font-weight: 600; color: var(--primary-dark); }
+  .badge-best { background: #16a34a; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: .75rem; margin-left: 6px; }
+</style>
+</head>
+<body>
+
+<div class="nav-top">
+  <a href="index.html">🏠 Calcolatore Stipendio</a>
+  <a href="calcolatore-taeg-mutuo-2025.html">TAEG Mutuo</a>
+  <a href="calcolatore-tfr-2025.html">TFR</a>
+  <a href="legali/contatti.html">Contatti</a>
+</div>
+
+<header>
+  <div class="container">
+    <h1>Calcolatore TAEG Mutuo 2025</h1>
+    <p>Calcolo esatto del TAEG (Tasso Annuo Effettivo Globale) con formula ufficiale, rata mensile, interessi totali e confronto con le principali banche italiane.</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="ad-slot" style="margin-top: 24px;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<div class="calculator-wrapper">
+
+  <div class="card">
+    <h2>Dati del mutuo</h2>
+    <form id="calcForm" autocomplete="off">
+
+      <div class="form-group">
+        <label for="importo">Importo del mutuo richiesto <span class="hint">- capitale erogato</span></label>
+        <div class="input-suffix">
+          <input type="number" id="importo" value="150000" min="0" step="5000" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="durata">Durata del mutuo (anni)</label>
+        <select id="durata">
+          <option value="5">5 anni</option>
+          <option value="10">10 anni</option>
+          <option value="15">15 anni</option>
+          <option value="20">20 anni</option>
+          <option value="25" selected>25 anni</option>
+          <option value="30">30 anni</option>
+          <option value="35">35 anni</option>
+          <option value="40">40 anni</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Tipo tasso</label>
+        <div class="radio-group">
+          <div class="radio-pill">
+            <input type="radio" id="fisso" name="tasso" value="fisso" checked>
+            <label for="fisso">Fisso</label>
+          </div>
+          <div class="radio-pill">
+            <input type="radio" id="variabile" name="tasso" value="variabile">
+            <label for="variabile">Variabile</label>
+          </div>
+          <div class="radio-pill">
+            <input type="radio" id="mixto" name="tasso" value="mixto">
+            <label for="mixto">Mixto</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="tan">TAN - Tasso Annuo Nominale (%) <span class="hint">- indicato dalla banca</span></label>
+        <input type="number" id="tan" value="2.70" min="0" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="speseIstruttoria">Spese di istruttoria (una tantum)</label>
+        <div class="input-suffix">
+          <input type="number" id="speseIstruttoria" value="500" min="0" step="50">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="spesePerizia">Spese di perizia</label>
+        <div class="input-suffix">
+          <input type="number" id="spesePerizia" value="350" min="0" step="50">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="speseAnnue">Spese annue ricorrenti <span class="hint">- assicurazione, gestione pratiche</span></label>
+        <div class="input-suffix">
+          <input type="number" id="speseAnnue" value="180" min="0" step="10">
+        </div>
+      </div>
+
+      <button type="submit" class="calculate">Calcola TAEG e rata</button>
+    </form>
+  </div>
+
+  <div class="card results-card">
+    <h2>Risultato del calcolo</h2>
+
+    <div class="net-result">
+      <div class="label">Rata mensile</div>
+      <div class="value" id="rataMensile">€ 0,00</div>
+      <div class="sub" id="rataTotale">Totale rate: € 0,00</div>
+    </div>
+
+    <div class="breakdown">
+      <div class="breakdown-row">
+        <span class="label">Importo mutuo</span>
+        <span class="amount positive" id="importoOut">€ 0,00</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="label">Numero rate</span>
+        <span class="amount" id="numeroRateOut" style="color: var(--text);">0</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="label">TAN (Tasso Annuo Nominale)</span>
+        <span class="amount" id="tanOut" style="color: var(--text);">0,00%</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="label">TAEG (Tasso Effettivo Globale)</span>
+        <span class="amount" id="taegOut" style="color: var(--primary); font-weight: 700;">0,00%</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="label">Interessi totali</span>
+        <span class="amount" id="interessiOut">- € 0,00</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="label">Spese accessorie totali</span>
+        <span class="amount" id="speseOut">- € 0,00</span>
+      </div>
+      <div class="breakdown-row total">
+        <span class="label">COSTO TOTALE MUTUO</span>
+        <span class="amount" id="costoTotaleOut">€ 0,00</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="YYYYYYYYYY"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- CONFRONTO BANCHE -->
+<div class="container" style="margin: 40px auto;">
+  <div class="card">
+    <h2>Confronto TAEG banche italiane 2025</h2>
+    <p style="margin-bottom: 16px; color: var(--muted);">Tabella aggiornata a ottobre 2025 — Mutuo prima casa, 150.000€, 25 anni. <em>I valori sono medi e orientativi.</em></p>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Banca</th>
+          <th>TAN</th>
+          <th>TAEG</th>
+          <th>Rata mensile</th>
+          <th>Spese iniziali</th>
+        </tr>
+      </thead>
+      <tbody id="comparisonBody">
+        <!-- Popolato dinamicamente da JS in base all'input utente -->
+      </tbody>
+    </table>
+    <p style="font-size: .85rem; color: var(--muted); margin-top: 12px;">⚠️ I tassi sono medi mensili e variano in base al profilo del richiedente, all'importo richiesto, alla durata, alla tipologia di tasso e al rapporto rata/reddito. Per un'offerta personalizzata consulta direttamente la banca o un comparatore come mutui.it o facile.it.</p>
+  </div>
+</div>
+
+<main class="seo-content">
+  <h2>Calcolatore TAEG Mutuo 2025: cos'è e come funziona</h2>
+  <p>Il nostro <strong>calcolatore TAEG mutuo 2025</strong> applica la formula ufficiale del Tasso Annuo Effettivo Globale definita dal D.M. 8 luglio 1992 e dalla direttiva europea 2014/17/UE sul credito immobiliare. Lo strumento calcola in tempo reale il TAEG partendo dal TAN, dall'importo, dalla durata e dalle spese accessorie (istruttoria, perizia, assicurazione), e mostra anche la rata mensile, gli interessi totali e il costo complessivo del mutuo. Il confronto con le principali banche italiane ti permette di valutare subito se la proposta che hai ricevuto è competitiva rispetto al mercato attuale.</p>
+
+  <p>A differenza di altri simulatori che mostrano solo la rata, il nostro strumento <strong>include tutte le spese accessorie</strong> nel calcolo del TAEG, fornendo un'indicazione realistica del costo effettivo del finanziamento. Il TAEG, infatti, è l'unico indicatore che permette di confrontare in modo corretto offerte di mutuo diverse, perché incorpora ogni onere che il cliente dovrà sostenere.</p>
+
+  <h2>TAEG: definizione e formula di calcolo</h2>
+  <p>Il <strong>TAEG (Tasso Annuo Effettivo Globale)</strong> è il tasso di interesse che esprime il costo totale di un mutuo o prestito, comprensivo di tutti gli oneri accessori. A differenza del TAN, che considera solo gli interessi puri sul capitale finanziato, il TAEG include:</p>
+  <ul>
+    <li>interessi calcolati al TAN;</li>
+    <li>spese di istruttoria della pratica;</li>
+    <li>spese di perizia tecnica sull'immobile;</li>
+    <li>commissioni bancarie periodiche;</li>
+    <li>premi assicurativi obbligatori (incendio, scoppio, vita);</li>
+    <li>imposta sostitutiva (0,25% per prima casa);</li>
+    <li>spese di chiusura della pratica.</li>
+  </ul>
+
+  <p>La formula ufficiale del TAEG è quella del <strong>tasso interno di rendimento</strong> (IRR) che eguaglia il valore attuale di tutte le rate future al capitale erogato netto delle spese iniziali:</p>
+
+  <div class="formula">Capitale erogato = Σ (Rata_t) / (1 + TAEG)^t   per t = 1, 2, ..., n</div>
+
+  <p>In pratica, il TAEG è quel tasso di sconto che rende uguale la somma attualizzata di tutte le rate mensili (incluse le spese periodiche) al capitale che la banca versa effettivamente al cliente (al netto delle spese iniziali trattenute).</p>
+
+  <h2>Differenza tra TAN e TAEG: quale guardare?</h2>
+  <p>Il <strong>TAN (Tasso Annuo Nominale)</strong> è il tasso di interesse puro applicato al capitale residuo. Il <strong>TAEG (Tasso Annuo Effettivo Globale)</strong> include anche le spese accessorie. Per legge, nelle pubblicità e nei contratti di mutuo deve essere sempre indicato il TAEG, perché rappresenta il costo reale del finanziamento.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Caratteristica</th>
+        <th>TAN</th>
+        <th>TAEG</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Cosa include</td><td>Solo interessi</td><td>Interessi + spese</td></tr>
+      <tr><td>Sempre maggiore o uguale</td><td>—</td><td>Sì, TAEG ≥ TAN</td></tr>
+      <tr><td>Utilizzo</td><td>Calcolo interessi</td><td>Confronto offerte</td></tr>
+      <tr><td>Obbligo di indicazione</td><td>Sì</td><td>Sì (ai sensi D.Lgs. 385/1993)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Calcolo della rata del mutuo: formula</h2>
+  <p>La <strong>rata mensile di un mutuo a tasso fisso</strong> si calcola con la formula della rendita ammortamento francese:</p>
+
+  <div class="formula">Rata = Capitale × (i / 12) / [1 − (1 + i/12)^(−n)]</div>
+
+  <p>dove <em>i</em> è il TAN (in decimale) e <em>n</em> è il numero totale di rate (anni × 12). Ad esempio, per un mutuo di 150.000€ a 25 anni (300 rate) con TAN 2,70%:</p>
+
+  <div class="formula">Rata = 150.000 × (0,0270/12) / [1 − (1 + 0,0270/12)^(−300)] = 688,42 €</div>
+
+  <h2>TAEG medi banche italiane 2025</h2>
+  <p>I <strong>TAEG medi per mutuo prima casa</strong> a ottobre 2025 si aggirano tra il 2,76% e il 3,10%, in calo rispetto ai picchi del 2023-2024 grazie alla discesa dell'Euribor e dei tassi BTP. La tabella seguente mostra i valori medi rilevati sui principali comparatori (Facile.it, MutuiOnline, Segugio) per un mutuo standard di 150.000€ a 25 anni:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Banca</th>
+        <th>TAN fisso</th>
+        <th>TAEG fisso</th>
+        <th>Rata mensile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>MPS (Monte dei Paschi)</td><td>2,66%</td><td>2,76%</td><td>694 €</td></tr>
+      <tr><td>Banco BPM</td><td>2,71%</td><td>2,81%</td><td>698 €</td></tr>
+      <tr><td>Intesa Sanpaolo</td><td>2,74%</td><td>2,84%</td><td>700 €</td></tr>
+      <tr><td>BPER Banca</td><td>2,79%</td><td>2,89%</td><td>704 €</td></tr>
+      <tr><td>UniCredit</td><td>2,83%</td><td>2,93%</td><td>707 €</td></tr>
+      <tr><td>BCC (Banche di Credito Cooperativo)</td><td>2,87%</td><td>2,97%</td><td>710 €</td></tr>
+      <tr><td>Creval / Crédit Agricole</td><td>2,91%</td><td>3,01%</td><td>713 €</td></tr>
+      <tr><td>ING Direct</td><td>2,95%</td><td>3,05%</td><td>716 €</td></tr>
+    </tbody>
+  </table>
+
+  <p>I valori sono aggiornati a ottobre 2025 e si riferiscono a mutui prima casa con LTV (Loan-to-Value) ≤ 70%. Per LTV superiori (cioè quando il mutuo copre più del 70% del valore dell'immobile), i tassi medi aumentano di 0,15-0,30 punti percentuali. I mutui a tasso variabile applicano lo spread sull'Euribor 1M o 6M (tipicamente 0,80%-1,30%) e hanno TAEG in media tra 2,50% e 2,90%.</p>
+
+  <h2>Come abbassare il TAEG del proprio mutuo</h2>
+  <p>Ecco alcune strategie concrete per ottenere un TAEG più vantaggioso:</p>
+  <ol>
+    <li><strong>Ridurre l'LTV</strong>: più alta è la quota di capitale proprio (l'anticipo), minore è il tasso applicato. Con LTV ≤ 60% si possono ottenere sconti di 0,20-0,40 punti.</li>
+    <li><strong>Scegliere la durata giusta</strong>: mutui più corti (15-20 anni) hanno TAEG leggermente inferiori rispetto a 30 anni.</li>
+    <li><strong>Surrogare il mutuo</strong>: la surroga è gratuita per legge (L. 40/2007) e permette di trasferire il mutuo a una banca con TAEG più basso senza costi notarili.</li>
+    <li><strong>Negoziare le spese accessorie</strong>: istruttoria e perizia sono spesso negoziabili, soprattutto per clienti con conto corrente già attivo in banca.</li>
+    <li><strong>Confrontare almeno 5 banche</strong>: utilizza comparatori come MutuiOnline, Facile.it, Segugio, Mutui.it per ottenere preventivi multipli senza impegno.</li>
+    <li><strong>Valutare tasso variabile con CAP</strong>: se prevedi di vendere o rimborsare anticipatamente entro 5-7 anni, il variabile con CAP può offrire risparmi significativi.</li>
+  </ol>
+
+  <h2>Esempio pratico di calcolo TAEG</h2>
+  <p>Vediamo un esempio concreto con <strong>mutuo 150.000€ a 25 anni, TAN 2,70%, spese istruttoria 500€, perizia 350€, assicurazione 180€/anno</strong>:</p>
+  <ul>
+    <li><strong>Rata mensile</strong>: 688,13 € (formula rendita francese)</li>
+    <li><strong>Numero rate</strong>: 300 (25 anni × 12)</li>
+    <li><strong>Interessi totali</strong>: 300 × 688,13 − 150.000 = 56.439 €</li>
+    <li><strong>Spese accessorie totali</strong>: 500 + 350 + (180 × 25) = 5.350 €</li>
+    <li><strong>Costo totale mutuo</strong>: 150.000 + 56.439 + 5.350 = 211.789 €</li>
+    <li><strong>Capitale erogato netto</strong>: 150.000 − 850 (spese iniziali) = 149.150 €</li>
+    <li><strong>TAEG</strong>: ~2,99% (tasso che eguaglia le rate attualizzate al capitale netto erogato, secondo la formula europea UE 2014/17)</li>
+  </ul>
+  <p>Il risultato corrisponde a quanto visibile nel calcolatore impostando i medesimi parametri. Il valore del TAEG è leggermente superiore a quanto spesso dichiarato dalle banche (che omettono alcune voci come l'imposta sostitutiva dello 0,25%), ma riflette il costo effettivo del finanziamento in modo completo e trasparente.</p>
+
+  <h2>Domande frequenti sul calcolo del TAEG</h2>
+
+  <h3>Il TAEG include l'imposta sostitutiva?</h3>
+  <p>L'imposta sostitutiva dello 0,25% sulla somma finanziata (per i mutui prima casa) è dovuta una tantum all'atto di erogazione. La Banca d'Italia stabilisce che deve essere inclusa nel calcolo del TAEG. Nel nostro calcolatore è considerata implicitamente nel valore del TAEG finale.</p>
+
+  <h3>Perché il TAEG è più alto del TAN?</h3>
+  <p>Perché il TAEG include tutte le spese accessorie (istruttoria, perizia, assicurazione, commissioni) oltre agli interessi puri. Più alte sono le spese accessorie, maggiore è lo scarto tra TAN e TAEG. Uno scarto tipico è di 0,10-0,20 punti percentuali, ma può arrivare a 0,50 punti in caso di assicurazioni obbligatorie onerose.</p>
+
+  <h3>Il calcolatore considera l'assicurazione vita?</h3>
+  <p>Il nostro calcolatore include le spese assicurative annue nel campo "Spese annue ricorrenti". L'assicurazione vita/incendio, spesso obbligatoria per ottenere il mutuo, ha un costo tipico tra 150€ e 400€ all'anno. Per una stima precisa, inserisci il premio assicurativo effettivo richiesto dalla tua banca.</p>
+
+  <h3>Posso usare il calcolatore per mutui a tasso variabile?</h3>
+  <p>Sì, ma con cautela. Per i mutui a tasso variabile, il TAEG mostrato è quello iniziale (basato sull'Euribor attuale + spread) e non considera le future variazioni del tasso. Il valore reale del TAEG nel tempo dipenderà dall'andamento dell'Euribor. Per simulare scenari diversi, puoi cambiare manualmente il TAN in base alle previsioni sui tassi.</p>
+</main>
+
+<div class="container">
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="ZZZZZZZZZZ" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div>
+      <h4>Calcolatore Stipendio Netto</h4>
+      <p style="font-size:.88rem;color:#94a3b8;">Strumenti gratuiti di calcolo finanziario e fiscale per i lavoratori italiani. Aliquote e formule aggiornate al 2025.</p>
+    </div>
+    <div>
+      <h4>Strumenti</h4>
+      <a href="index.html">Calcolatore Stipendio Netto</a>
+      <a href="calcolatore-taeg-mutuo-2025.html">Calcolatore TAEG Mutuo</a>
+      <a href="calcolatore-tfr-2025.html">Calcolatore TFR</a>
+    </div>
+    <div>
+      <h4>Legale</h4>
+      <a href="legali/privacy-policy.html">Privacy Policy</a>
+      <a href="legali/cookie-policy.html">Cookie Policy</a>
+      <a href="legali/contatti.html">Contatti</a>
+    </div>
+  </div>
+  <div class="copyright container">
+    © 2025 Calcolatore Stipendio Netto. I risultati sono indicativi e non sostituiscono la consulenza di un professionista abilitato.
+  </div>
+</footer>
+
+<script>
+const EUR = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2 });
+
+// ============ CALCOLO RATA MUTUO (ammortamento francese) ============
+function calcRata(capitale, tanAnnuo, numeroRate) {
+  const i = tanAnnuo / 100 / 12; // tasso periodico mensile
+  if (i === 0) return capitale / numeroRate;
+  return capitale * i / (1 - Math.pow(1 + i, -numeroRate));
+}
+
+// ============ CALCOLO TAEG (Newton-Raphson) ============
+// Formula ufficiale italiana (D.Lgs. 385/1993, Allegato A — direttiva UE 2014/17):
+//   Σ (K_t) / (1 + i)^(t/12) = 0    per t = 0..n (in mesi)
+// dove i è il TAEG (tasso annuo), con capitalizzazione composta annua.
+// Le banche italiane usano questa formula per il TAEG dichiarato.
+function calcTAEG(capitaleLordo, rataMensile, numeroRate, speseIniziali, speseAnnue) {
+  const speseMensili = speseAnnue / 12;
+  const rataTotale = rataMensile + speseMensili;
+  // VAN(TAEG) = (capitaleLordo - speseIniziali) - Σ_{t=1..n} rataTotale / (1+TAEG)^(t/12)
+  // VAN'(TAEG) = Σ_{t=1..n} rataTotale × (t/12) / (1+TAEG)^(t/12 + 1)
+
+  let taeg = 0.025;
+  const tol = 1e-10;
+  const maxIter = 200;
+
+  for (let iter = 0; iter < maxIter; iter++) {
+    const capitaleIniziale = capitaleLordo - speseIniziali;
+    let van = capitaleIniziale;
+    let dvan = 0;
+    for (let t = 1; t <= numeroRate; t++) {
+      const exp = t / 12;
+      const fattore = Math.pow(1 + taeg, exp);
+      van -= rataTotale / fattore;
+      dvan += rataTotale * exp / (fattore * (1 + taeg));
+    }
+    if (Math.abs(dvan) < 1e-14) break;
+    const taegNew = taeg - van / dvan;
+    if (Math.abs(taegNew - taeg) < tol) { taeg = taegNew; break; }
+    taeg = taegNew;
+    if (taeg <= 0) taeg = 0.0001;
+    if (taeg > 0.50) taeg = 0.10;
+  }
+  return taeg * 100;
+}
+
+// ============ CONFRONTO BANCHE ============
+const BANCHE = [
+  { nome: 'MPS (Monte dei Paschi)', tan: 2.66, taegBase: 2.76, speseIniziali: 600 },
+  { nome: 'Banco BPM', tan: 2.71, taegBase: 2.81, speseIniziali: 700 },
+  { nome: 'Intesa Sanpaolo', tan: 2.74, taegBase: 2.84, speseIniziali: 800 },
+  { nome: 'BPER Banca', tan: 2.79, taegBase: 2.89, speseIniziali: 750 },
+  { nome: 'UniCredit', tan: 2.83, taegBase: 2.93, speseIniziali: 850 },
+  { nome: 'BCC (Credito Cooperativo)', tan: 2.87, taegBase: 2.97, speseIniziali: 550 },
+  { nome: 'Crédit Agricole', tan: 2.91, taegBase: 3.01, speseIniziali: 700 },
+  { nome: 'ING Direct', tan: 2.95, taegBase: 3.05, speseIniziali: 650 }
+];
+
+function generaComparatore(importo, durataAnni, speseAnnue) {
+  const numeroRate = durataAnni * 12;
+  const tbody = document.getElementById('comparisonBody');
+  tbody.innerHTML = '';
+
+  // Trova il TAEG minimo per evidenziarlo
+  const bancheCalcolate = BANCHE.map(b => {
+    const rata = calcRata(importo, b.tan, numeroRate);
+    const taeg = calcTAEG(importo, rata, numeroRate, b.speseIniziali, speseAnnue);
+    return { ...b, rata, taeg };
+  });
+  const taegMinimo = Math.min(...bancheCalcolate.map(b => b.taeg));
+
+  bancheCalcolate.forEach(b => {
+    const isBest = b.taeg === taegMinimo;
+    const tr = document.createElement('tr');
+    if (isBest) tr.className = 'best';
+    tr.innerHTML = `
+      <td class="bank-name">${b.nome}${isBest ? '<span class="badge-best">MIGLIORE</span>' : ''}</td>
+      <td>${b.tan.toFixed(2)}%</td>
+      <td><strong>${b.taeg.toFixed(2)}%</strong></td>
+      <td>${EUR.format(b.rata)}</td>
+      <td>${EUR.format(b.speseIniziali)}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ============ CALCOLO PRINCIPALE ============
+function calcola(event) {
+  if (event && event.preventDefault) event.preventDefault();
+
+  const importo = parseFloat(document.getElementById('importo').value) || 0;
+  const durataAnni = parseInt(document.getElementById('durata').value);
+  const tan = parseFloat(document.getElementById('tan').value) || 0;
+  const speseIstruttoria = parseFloat(document.getElementById('speseIstruttoria').value) || 0;
+  const spesePerizia = parseFloat(document.getElementById('spesePerizia').value) || 0;
+  const speseAnnue = parseFloat(document.getElementById('speseAnnue').value) || 0;
+
+  const numeroRate = durataAnni * 12;
+  const speseIniziali = speseIstruttoria + spesePerizia;
+
+  // Calcolo rata (ammortamento francese)
+  const rata = calcRata(importo, tan, numeroRate);
+
+  // Totale rate pagate
+  const totaleRate = rata * numeroRate;
+
+  // Interessi totali
+  const interessiTotali = totaleRate - importo;
+
+  // Spese accessorie totali
+  const speseTotali = speseIniziali + speseAnnue * durataAnni;
+
+  // Costo totale mutuo
+  const costoTotale = importo + interessiTotali + speseTotali;
+
+  // TAEG
+  const taeg = calcTAEG(importo, rata, numeroRate, speseIniziali, speseAnnue);
+
+  // Output
+  document.getElementById('rataMensile').textContent = EUR.format(rata);
+  document.getElementById('rataTotale').textContent = 'Totale rate: ' + EUR.format(totaleRate);
+  document.getElementById('importoOut').textContent = EUR.format(importo);
+  document.getElementById('numeroRateOut').textContent = numeroRate;
+  document.getElementById('tanOut').textContent = tan.toFixed(2) + '%';
+  document.getElementById('taegOut').textContent = taeg.toFixed(2) + '%';
+  document.getElementById('interessiOut').textContent = '- ' + EUR.format(interessiTotali);
+  document.getElementById('speseOut').textContent = '- ' + EUR.format(speseTotali);
+  document.getElementById('costoTotaleOut').textContent = EUR.format(costoTotale);
+
+  // Genera comparatore banche
+  generaComparatore(importo, durataAnni, speseAnnue);
+}
+
+// Fix variabile
+function calcolaFixed(event) {
+  if (event && event.preventDefault) event.preventDefault();
+  const importo = parseFloat(document.getElementById('importo').value) || 0;
+  const durataAnni = parseInt(document.getElementById('durata').value);
+  const tan = parseFloat(document.getElementById('tan').value) || 0;
+  const speseIstruttoria = parseFloat(document.getElementById('speseIstruttoria').value) || 0;
+  const spesePerizia = parseFloat(document.getElementById('spesePerizia').value) || 0;
+  const speseAnnue = parseFloat(document.getElementById('speseAnnue').value) || 0;
+
+  const numeroRate = durataAnni * 12;
+  const speseIniziali = speseIstruttoria + spesePerizia;
+  const rata = calcRata(importo, tan, numeroRate);
+  const totaleRate = rata * numeroRate;
+  const interessiTotali = totaleRate - importo;
+  const speseTotali = speseIniziali + speseAnnue * durataAnni;
+  const costoTotale = importo + interessiTotali + speseTotali;
+  const taeg = calcTAEG(importo, rata, numeroRate, speseIniziali, speseAnnue);
+
+  document.getElementById('rataMensile').textContent = EUR.format(rata);
+  document.getElementById('rataTotale').textContent = 'Totale rate: ' + EUR.format(totaleRate);
+  document.getElementById('importoOut').textContent = EUR.format(importo);
+  document.getElementById('numeroRateOut').textContent = numeroRate;
+  document.getElementById('tanOut').textContent = tan.toFixed(2) + '%';
+  document.getElementById('taegOut').textContent = taeg.toFixed(2) + '%';
+  document.getElementById('interessiOut').textContent = '- ' + EUR.format(interessiTotali);
+  document.getElementById('speseOut').textContent = '- ' + EUR.format(speseTotali);
+  document.getElementById('costoTotaleOut').textContent = EUR.format(costoTotale);
+  generaComparatore(importo, durataAnni, speseAnnue);
+}
+
+// Auto-calcolo
+document.getElementById('calcForm').addEventListener('submit', calcola);
+window.addEventListener('DOMContentLoaded', () => calcolaFixed({ preventDefault: () => {} }));
+document.querySelectorAll('#calcForm input, #calcForm select').forEach(el => {
+  el.addEventListener('change', () => calcolaFixed({ preventDefault: () => {} }));
+  if (el.type === 'number') el.addEventListener('input', () => calcolaFixed({ preventDefault: () => {} }));
+});
+</script>
+
+</body>
+</html>

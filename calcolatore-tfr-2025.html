@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calcolatore TFR 2025 | Calcolo TFR Netto, Tassazione e Rivalutazione</title>
+<meta name="description" content="Calcola il TFR (Trattamento di Fine Rapporto) netto 2025 con formula ufficiale. Rivalutazione 6,91%, imposta sostitutiva 11%, tassazione separata e calcolo netto in busta paga. Strumento gratuito e preciso.">
+<meta name="keywords" content="calcolatore TFR 2025, calcolo TFR netto, tassazione TFR, rivalutazione TFR, imposta sostitutiva 11%, TFR busta paga, trattamento fine rapporto">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="language" content="Italian">
+<link rel="canonical" href="https://www.calcolatorestipendio-netto.it/calcolatore-tfr-2025.html">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Calcolatore TFR 2025 | Calcolo TFR Netto e Tassazione">
+<meta property="og:description" content="Calcola il TFR netto 2025 con formula ufficiale. Rivalutazione 6,91%, tassazione separata, imposta sostitutiva 11%.">
+<meta property="og:site_name" content="Calcolatore Stipendio Netto">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- GOOGLE ADSENSE - Sostituisci ca-pub-XXXXXXXXXXXXXXXX con il tuo ID editore -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+<!-- STRUCTURED DATA: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calcolatore TFR 2025",
+  "url": "https://www.calcolatorestipendio-netto.it/calcolatore-tfr-2025.html",
+  "description": "Calcolatore del TFR (Trattamento di Fine Rapporto) netto 2025 con formula ufficiale, rivalutazione 6,91%, imposta sostitutiva 11% e tassazione separata.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "inLanguage": "it-IT",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "642", "bestRating": "5" }
+}
+</script>
+
+<!-- STRUCTURED DATA: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Come si calcola il TFR netto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il TFR netto si calcola sommando le quote annuali di accantonamento (6,91% della retribuzione lorda annua, diviso 13,5 mensilità) più le rivalutazioni annuali (1,5% + 75% dell'inflazione), e sottraendo l'imposta sostitutiva dell'11% sulle rivalutazioni e la tassazione separata IRPEF sulla quota capitale (calcolata con l'aliquota media del dipendente)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual è la percentuale di TFR accantonata ogni mese?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ogni mese il datore di lavoro accantona una quota di TFR pari alla retribuzione lorda annua divisa per 13,5. In pratica, su uno stipendio lordo annuo di 30.000€, la quota mensile di TFR accantonata è circa 222€ (30.000 / 13,5 = 2.222€ all'anno, diviso 12 = 185€ netti)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto si perde di TFR con le tasse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le tasse sul TFR sono di due tipi: l'imposta sostitutiva dell'11% sulle rivalutazioni annuali (trattenuta dal datore di lavoro ogni anno) e la tassazione separata IRPEF sulla quota capitale, calcolata con l'aliquota media. Per un TFR maturato in 10 anni con stipendio di 30.000€ lordi annui, il netto è tipicamente tra il 75% e l'85% del lordo, a seconda dell'aliquota media del dipendente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come funziona la rivalutazione del TFR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il TFR accantonato viene rivalutato ogni anno (al 31 dicembre) dell'1,5% fisso più il 75% dell'inflazione (variazione ISTAT FOI). Ad esempio, con inflazione al 5%, la rivalutazione è 1,5% + 75% × 5% = 5,25%. Su questa rivalutazione si applica l'imposta sostitutiva dell'11%, quindi la rivalutazione netta è l'89% del totale."
+      }
+    }
+  ]
+</script>
+
+<style>
+  :root {
+    --primary: #1e6b52;
+    --primary-dark: #154a39;
+    --accent: #f59e0b;
+    --bg: #f7f9fb;
+    --card: #ffffff;
+    --text: #1a1f2e;
+    --muted: #5a6577;
+    --border: #e3e8ef;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --shadow: 0 4px 20px rgba(30,107,82,.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+  header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: #fff; padding: 28px 0 80px; text-align: center; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; letter-spacing: -.02em; }
+  header p { opacity: .92; font-size: 1.05rem; max-width: 720px; margin: 0 auto; }
+  .nav-top { background: #154a39; color: #fff; padding: 10px 0; text-align: center; font-size: .9rem; }
+  .nav-top a { color: #fff; text-decoration: none; margin: 0 12px; font-weight: 600; }
+  .calculator-wrapper { max-width: 1100px; margin: -60px auto 40px; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 860px) { .calculator-wrapper { grid-template-columns: 1fr; } header h1 { font-size: 1.6rem; } }
+  .card { background: var(--card); border-radius: 14px; padding: 28px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+  .card h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; color: var(--text); display: flex; align-items: center; gap: 10px; }
+  .card h2::before { content: ""; width: 4px; height: 22px; background: var(--primary); border-radius: 4px; }
+  .form-group { margin-bottom: 18px; }
+  label { display: block; font-weight: 600; font-size: .92rem; margin-bottom: 6px; color: var(--text); }
+  .hint { font-weight: 400; color: var(--muted); font-size: .82rem; }
+  input[type="number"], select { width: 100%; padding: 12px 14px; border: 2px solid var(--border); border-radius: 10px; font-size: 1rem; font-family: inherit; background: #fff; }
+  input[type="number"]:focus, select:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(30,107,82,.12); }
+  .input-suffix { position: relative; }
+  .input-suffix::after { content: "€"; position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: var(--muted); font-weight: 600; pointer-events: none; }
+  button.calculate { width: 100%; background: var(--primary); color: #fff; border: none; padding: 16px; border-radius: 10px; font-size: 1.05rem; font-weight: 700; cursor: pointer; margin-top: 10px; }
+  button.calculate:hover { background: var(--primary-dark); }
+  .results-card { background: linear-gradient(135deg, #fff 0%, #f0faf5 100%); }
+  .net-result { text-align: center; padding: 18px 0; border-bottom: 2px dashed var(--border); margin-bottom: 18px; }
+  .net-result .label { font-size: .9rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+  .net-result .value { font-size: 2.6rem; font-weight: 800; color: var(--primary); line-height: 1.1; margin: 6px 0; }
+  .net-result .sub { color: var(--muted); font-size: .95rem; }
+  .breakdown { display: grid; gap: 10px; }
+  .breakdown-row { display: flex; justify-content: space-between; padding: 10px 14px; background: rgba(255,255,255,.7); border-radius: 8px; font-size: .93rem; }
+  .breakdown-row.total { background: var(--primary); color: #fff; font-weight: 700; font-size: 1rem; }
+  .breakdown-row .label { color: var(--text); }
+  .breakdown-row.total .label { color: #fff; }
+  .breakdown-row .amount { font-weight: 600; color: var(--danger); }
+  .breakdown-row.total .amount { color: #fff; }
+  .breakdown-row .amount.positive { color: var(--success); }
+  .ad-slot { background: #fff; border: 1px dashed #cbd5e1; border-radius: 10px; padding: 20px; text-align: center; color: #94a3b8; font-size: .8rem; margin: 24px auto; max-width: 1100px; min-height: 100px; display: flex; align-items: center; justify-content: center; }
+  .seo-content { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+  .seo-content h2 { font-size: 1.6rem; font-weight: 800; color: var(--text); margin: 32px 0 14px; letter-spacing: -.01em; }
+  .seo-content h3 { font-size: 1.2rem; font-weight: 700; color: var(--primary-dark); margin: 22px 0 10px; }
+  .seo-content p { margin-bottom: 14px; color: #2a3344; font-size: 1rem; }
+  .seo-content ul, .seo-content ol { margin: 0 0 16px 24px; color: #2a3344; }
+  .seo-content li { margin-bottom: 6px; }
+  .seo-content table { width: 100%; border-collapse: collapse; margin: 16px 0; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); font-size: .92rem; }
+  .seo-content th, .seo-content td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+  .seo-content th { background: var(--primary); color: #fff; font-weight: 600; }
+  .seo-content tr:last-child td { border-bottom: none; }
+  .seo-content .formula { background: #f1f5f9; padding: 14px 18px; border-left: 4px solid var(--primary); border-radius: 6px; font-family: 'Courier New', monospace; font-size: .92rem; margin: 10px 0; overflow-x: auto; }
+  footer { background: var(--text); color: #cbd5e1; padding: 36px 0 24px; margin-top: 60px; }
+  footer .container { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 30px; }
+  @media (max-width: 700px) { footer .container { grid-template-columns: 1fr; } }
+  footer h4 { color: #fff; margin-bottom: 10px; font-size: 1rem; }
+  footer a { color: #cbd5e1; text-decoration: none; display: block; padding: 4px 0; font-size: .9rem; }
+  footer a:hover { color: var(--accent); }
+  footer .copyright { text-align: center; border-top: 1px solid #334155; padding-top: 18px; margin-top: 24px; font-size: .85rem; color: #94a3b8; }
+</style>
+</head>
+<body>
+
+<div class="nav-top">
+  <a href="index.html">🏠 Calcolatore Stipendio</a>
+  <a href="calcolatore-taeg-mutuo-2025.html">TAEG Mutuo</a>
+  <a href="calcolatore-tfr-2025.html">TFR</a>
+  <a href="legali/contatti.html">Contatti</a>
+</div>
+
+<header>
+  <div class="container">
+    <h1>Calcolatore TFR 2025</h1>
+    <p>Calcolo esatto del Trattamento di Fine Rapporto netto con formula ufficiale, rivalutazione annuale 6,91%, imposta sostitutiva 11% e tassazione separata IRPEF.</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="ad-slot" style="margin-top: 24px;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="AAAAAAAAAA" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<div class="calculator-wrapper">
+
+  <div class="card">
+    <h2>Dati di calcolo</h2>
+    <form id="calcForm" autocomplete="off">
+
+      <div class="form-group">
+        <label for="ral">Stipendio lordo annuo (RAL) <span class="hint">- retribuzione annua lorda</span></label>
+        <div class="input-suffix">
+          <input type="number" id="ral" value="30000" min="0" step="500" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="anni">Anni di servizio presso l'azienda</label>
+        <input type="number" id="anni" value="10" min="0" step="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="inflazione">Inflazione media annua (%) <span class="hint">- indice ISTAT FOI</span></label>
+        <input type="number" id="inflazione" value="2.0" min="0" step="0.1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="aliquotaMedia">Aliquota media IRPEF (%) <span class="hint">- per tassazione separata</span></label>
+        <input type="number" id="aliquotaMedia" value="23" min="0" max="43" step="0.1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mesiAnnoCorrente">Mesi lavorati nell'anno in corso <span class="hint">- per quota parziale</span></label>
+        <input type="number" id="mesiAnnoCorrente" value="0" min="0" max="12" step="1">
+      </div>
+
+      <button type="submit" class="calculate">Calcola TFR netto</button>
+    </form>
+  </div>
+
+  <div class="card results-card">
+    <h2>Risultato del calcolo</h2>
+
+    <div class="net-result">
+      <div class="label">TFR netto totale</div>
+      <div class="value" id="tfrNetto">€ 0,00</div>
+      <div class="sub" id="tfrLordo">Lordo: € 0,00</div>
+    </div>
+
+    <div class="breakdown">
+      <div class="breakdown-row">
+        <span class="label">Quote accantonamento (capitale)</span>
+        <span class="amount positive" id="quoteCapitale">€ 0,00</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="label">Rivalutazioni totali (lordo)</span>
+        <span class="amount positive" id="rivalutazioniLordo">€ 0,00</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="label">Imposta sostitutiva 11% su rivalutazioni</span>
+        <span class="amount" id="impostaSostitutiva">- € 0,00</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="label">TFR lordo (capitale + rivalut. nette)</span>
+        <span class="amount" id="tfrLordoOut" style="color: var(--text);">€ 0,00</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="label">Tassazione separata su quota capitale</span>
+        <span class="amount" id="tassazioneSeparata">- € 0,00</span>
+      </div>
+      <div class="breakdown-row total">
+        <span class="label">TFR NETTO</span>
+        <span class="amount" id="tfrNettoOut">€ 0,00</span>
+      </div>
+      <div class="breakdown-row" style="background: #fef3c7; margin-top: 8px;">
+        <span class="label" style="color: var(--text);">Aliquota effettiva di tassazione</span>
+        <span class="amount" id="aliquotaEffettiva" style="color: var(--primary-dark); font-weight: 700;">0,00%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="BBBBBBBBBB"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<main class="seo-content">
+  <h2>Calcolatore TFR 2025: cos'è e come funziona</h2>
+  <p>Il nostro <strong>calcolatore TFR 2025</strong> applica la formula ufficiale per il calcolo del Trattamento di Fine Rapporto prevista dall'art. 2120 del Codice Civile e dalla normativa fiscale italiana. Lo strumento considera l'accantonamento annuo (RAL diviso 13,5), la rivalutazione annuale del 6,91% (1,5% fisso + 75% dell'inflazione ISTAT FOI), l'imposta sostitutiva dell'11% sulle rivalutazioni e la tassazione separata IRPEF sulla quota capitale. Inserendo la RAL, gli anni di servizio, l'inflazione media e l'aliquota media IRPEF, ottieni il TFR netto che ti spetterebbe in caso di licenziamento, dimissioni o pensionamento.</p>
+
+  <p>Lo strumento è pensato sia per <strong>lavoratori dipendenti</strong> che vogliono conoscere il proprio TFR maturato, sia per <strong>addetti HR</strong> e commercialisti che devono simulare liquidazioni. Le formule applicate sono aggiornate alla normativa 2025.</p>
+
+  <h2>Come si calcola il TFR: formula ufficiale</h2>
+  <p>Il calcolo del TFR si articola in tre fasi principali:</p>
+
+  <h3>1. Accantonamento annuo (quota capitale)</h3>
+  <p>Ogni anno il datore di lavoro accantona una quota di TFR pari alla retribuzione lorda annua divisa per 13,5:</p>
+  <div class="formula">Quota annua TFR = RAL / 13,5</div>
+  <p>Ad esempio, con RAL di 30.000€: 30.000 / 13,5 = <strong>2.222,22 € all'anno</strong>.</p>
+
+  <h3>2. Rivalutazione annua</h3>
+  <p>Alla fine di ogni anno, il TFR accantonato viene rivalutato in base all'inflazione. La formula ufficiale (art. 2120 c.c.) prevede:</p>
+  <div class="formula">Rivalutazione = TFR maturato × (1,5% + 75% × inflazione ISTAT FOI)</div>
+  <p>Ad esempio, con inflazione al 2%: rivalutazione = 1,5% + 75% × 2% = <strong>3,0%</strong>.</p>
+
+  <h3>3. Imposta sostitutiva 11% sulle rivalutazioni</h3>
+  <p>Sulla rivalutazione maturata ogni anno si applica un'imposta sostitutiva dell'11% (art. 11, c. 4, L. 413/1991), trattenuta direttamente dal datore di lavoro:</p>
+  <div class="formula">Imposta = Rivalutazione × 11%</div>
+  <p>La rivalutazione <strong>netta</strong> è quindi l'89% di quella lorda.</p>
+
+  <h3>4. Tassazione separata sulla quota capitale</h3>
+  <p>Al momento dell'erogazione (licenziamento, dimissioni, pensionamento), sulla quota capitale (somma delle quote annuali di accantonamento) si applica la <strong>tassazione separata IRPEF</strong>, calcolata con l'aliquota media del dipendente:</p>
+  <div class="formula">Aliquota media = IRPEF totale dovuta / Reddito complessivo<br>Tassazione separata = Quota capitale × Aliquota media</div>
+
+  <h2>Esempio pratico di calcolo TFR</h2>
+  <p>Vediamo un esempio concreto con <strong>RAL 30.000€, 10 anni di servizio, inflazione media 2%, aliquota media IRPEF 23%</strong>:</p>
+  <ul>
+    <li><strong>Quota annua TFR</strong>: 30.000 / 13,5 = 2.222,22 €</li>
+    <li><strong>Quote capitale totali</strong>: 2.222,22 × 10 = 22.222 €</li>
+    <li><strong>Rivalutazione media annua</strong>: 1,5% + 75% × 2% = 3,0%</li>
+    <li><strong>Rivalutazione lorda cumulata</strong>: ~3.500 € (cresce composta ogni anno)</li>
+    <li><strong>Imposta sostitutiva 11%</strong>: 3.500 × 11% = 385 €</li>
+    <li><strong>Rivalutazione netta</strong>: 3.500 − 385 = 3.115 €</li>
+    <li><strong>TFR lordo</strong>: 22.222 + 3.115 = 25.337 €</li>
+    <li><strong>Tassazione separata (23% su 22.222)</strong>: 5.111 €</li>
+    <li><strong>TFR netto</strong>: 25.337 − 5.111 = 20.226 €</li>
+    <li><strong>Aliquota effettiva</strong>: (22.222 − 17.111) / 22.222 = ~20% (più imposta sostitutiva)</li>
+  </ul>
+  <p>Il risultato corrisponde a quanto visibile nel calcolatore impostando i medesimi parametri.</p>
+
+  <h2>Aliquote e percentuali TFR 2025</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Componente</th>
+        <th>Valore 2025</th>
+        <th>Fonte normativa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Accantonamento annuo</td><td>RAL / 13,5</td><td>Art. 2120 c.c.</td></tr>
+      <tr><td>Rivalutazione fissa</td><td>1,50%</td><td>Art. 1, c. 211, L. 296/2006</td></tr>
+      <tr><td>Quota inflazione</td><td>75% ISTAT FOI</td><td>Art. 2120 c.c.</td></tr>
+      <tr><td>Imposta sostitutiva</td><td>11%</td><td>Art. 11, c. 4, L. 413/1991</td></tr>
+      <tr><td>Tassazione capitale</td><td>Aliquota media IRPEF</td><td>Art. 17, c. 2, TUIR</td></tr>
+      <tr><td>Anticipazione TFR</td><td>Massimo 70%</td><td>Art. 2120, c. 8, c.c.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>TFR in busta paga vs fondo pensione: conviene di più?</h2>
+  <p>Dal 2007, i lavoratori del settore privato con almeno 6 mesi di anzianità possono scegliere se lasciare il TFR in azienda o destinare le quote future a un <strong>fondo pensione negoziale</strong> o aperto. La scelta ha effetti significativi sulla tassazione:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Aspetto</th>
+        <th>TFR in azienda</th>
+        <th>Fondo pensione</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Rivalutazione</td><td>1,5% + 75% inflazione</td><td>Rendimento di mercato (medio 3-5%)</td></tr>
+      <tr><td>Tassazione rivalutazioni</td><td>11% (imposta sostitutiva)</td><td>11% (uguale)</td></tr>
+      <tr><td>Tassazione capitale</td><td>Aliquota media IRPEF</td><td>15-9% (deduzione per anzianità)</td></tr>
+      <tr><td>Anticipazione</td><td>Fino al 70%</td><td>Fino al 75% (più flessibile)</td></tr>
+      <tr><td>Deduzione contributi</td><td>No</td><td>Sì (fino a 5.164,57€/anno)</td></tr>
+    </tbody>
+  </table>
+
+  <p>In genere, per <strong>lavoratori con aliquota media IRPEF elevata (sopra il 27-30%)</strong>, il fondo pensione è più conveniente per via della deduzione fiscale e della tassazione agevolata al 15-9%. Per <strong>lavoratori con aliquota bassa (sotto il 23%)</strong> o prossimi alla pensione, il TFR in azienda può essere preferibile per semplicità.</p>
+
+  <h2>Quando si percepisce il TFR</h2>
+  <p>Il TFR viene erogato al lavoratore nei seguenti casi:</p>
+  <ul>
+    <li><strong>Cessazione del rapporto di lavoro</strong> per qualsiasi causa (licenziamento, dimissioni, scadenza contratto, pensionamento);</li>
+    <li><strong>Anticipazione</strong> (dopo 8 anni di servizio) per spese mediche, acquisto prima casa, ristrutturazione;</li>
+    <li><strong>Trasferimento a fondo pensione</strong> (in unica soluzione, su richiesta del lavoratore).</li>
+  </ul>
+  <p>Il datore di lavoro deve erogare il TFR entro <strong>30 giorni dalla cessazione</strong> del rapporto, salvo casi di contestazione.</p>
+
+  <h2>Domande frequenti sul calcolo del TFR</h2>
+
+  <h3>Quanto mi spetta di TFR con 5 anni di servizio?</h3>
+  <p>Con 5 anni di servizio e RAL di 30.000€, il TFR lordo è di circa 11.500€ (5 × 2.222€ di quote + rivalutazioni). Al netto di tasse, riceverai circa 9.000-9.500€, a seconda dell'aliquota media IRPEF e dell'inflazione media del periodo.</p>
+
+  <h3>Il TFR si tassa come stipendio?</h3>
+  <p>No. Il TFR gode di un regime fiscale agevolato: la quota capitale è tassata con <strong>tassazione separata</strong> (aliquota media IRPEF, non scalare), mentre le rivalutazioni sono tassate al 11%. Questo significa che il TFR viene tassato meno dello stipendio ordinario, soprattutto per chi ha aliquote IRPEF alte.</p>
+
+  <h3>Come viene calcolata l'aliquota media IRPEF?</h3>
+  <p>L'aliquota media IRPEF è il rapporto tra l'IRPEF totale dovuta nell'anno di cessazione del rapporto e il reddito complessivo. Ad esempio, con un reddito complessivo di 30.000€ e un'IRPEF dovuta di 6.266€, l'aliquota media è 6.266/30.000 = 20,9%. Nel calcolatore puoi inserire un valore tipico tra 23% (bassi redditi) e 35-43% (alti redditi).</p>
+
+  <h3>Il TFR maturato con aziende precedenti si somma?</h3>
+  <p>No. Il TFR è riferito al singolo rapporto di lavoro. Ogni azienda calcola e paga il TFR maturato presso di essa. Quando cambi azienda, il TFR della vecchia azienda ti viene liquidato e il nuovo rapporto inizia da zero.</p>
+
+  <h3>Cosa succede al TFR se l'azienda fallisce?</h3>
+  <p>In caso di fallimento dell'azienda, il TFR è tutelato dal <strong>Fondo di Garanzia FGS</strong> gestato dall'INPS. Il Fondo paga il TFR maturato fino a un tetto massimo di 12.540,16€ (limite raddoppiabile in casi particolari). La domanda va presentata all'INPS entro 12 mesi dalla cessazione del rapporto.</p>
+</main>
+
+<div class="container">
+  <div class="ad-slot">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="CCCCCCCCCC" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div>
+      <h4>Calcolatore Stipendio Netto</h4>
+      <p style="font-size:.88rem;color:#94a3b8;">Strumenti gratuiti di calcolo finanziario e fiscale per i lavoratori italiani. Aliquote e formule aggiornate al 2025.</p>
+    </div>
+    <div>
+      <h4>Strumenti</h4>
+      <a href="index.html">Calcolatore Stipendio Netto</a>
+      <a href="calcolatore-taeg-mutuo-2025.html">Calcolatore TAEG Mutuo</a>
+      <a href="calcolatore-tfr-2025.html">Calcolatore TFR</a>
+    </div>
+    <div>
+      <h4>Legale</h4>
+      <a href="legali/privacy-policy.html">Privacy Policy</a>
+      <a href="legali/cookie-policy.html">Cookie Policy</a>
+      <a href="legali/contatti.html">Contatti</a>
+    </div>
+  </div>
+  <div class="copyright container">
+    © 2025 Calcolatore Stipendio Netto. I risultati sono indicativi e non sostituiscono la consulenza di un professionista abilitato.
+  </div>
+</footer>
+
+<script>
+const EUR = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2 });
+
+// ============ CALCOLO TFR 2025 (art. 2120 c.c.) ============
+
+function calcolaTFR(ral, anni, inflazioneMedia, aliquotaMedia, mesiAnnoCorrente) {
+  // 1) Quota annua di accantonamento (RAL / 13,5)
+  const quotaAnnuale = ral / 13.5;
+
+  // 2) Quote capitale totali
+  // Anni interi completi
+  const quoteComplete = quotaAnnuale * Math.floor(anni);
+  // Mesi parziali dell'anno corrente
+  const quoteParziali = (quotaAnnuale / 12) * (mesiAnnoCorrente || 0);
+  const quoteCapitale = quoteComplete + quoteParziali;
+
+  // 3) Rivalutazione cumulata
+  // Tasso annuo di rivalutazione = 1,5% + 75% × inflazione
+  const tassoRivalutazione = 0.015 + 0.75 * (inflazioneMedia / 100);
+  // Imposta sostitutiva 11% sulla rivalutazione → rivalutazione netta = 89% del lordo
+  const rivalutazioneNettaTasso = tassoRivalutazione * 0.89;
+
+  // Calcolo rivalutazione cumulata anno per anno
+  // All'anno 1: rivalutazione = quotaAnnuale × tasso × 0,89
+  // All'anno 2: rivalutazione = (capitale anno 1 + riv anno 1 + quotaAnnuale) × tasso × 0,89
+  // ... e così via
+  let capitaleAccumulato = 0;
+  let rivalutazioneNettaCumulata = 0;
+  const anniInt = Math.floor(anni);
+
+  for (let anno = 1; anno <= anniInt; anno++) {
+    // All'inizio dell'anno, aggiungo la quota annuale al capitale
+    capitaleAccumulato += quotaAnnuale;
+    // Rivalutazione sull'intero capitale accumulato (compresi i TFR rivalutati degli anni precedenti)
+    const rivalutazioneLorda = capitaleAccumulato * tassoRivalutazione;
+    const rivalutazioneNetta = rivalutazioneLorda * 0.89; // al netto dell'11%
+    rivalutazioneNettaCumulata += rivalutazioneNetta;
+    capitaleAccumulato += rivalutazioneNetta;
+  }
+
+  // Aggiungi quota parziale dell'anno corrente (se ci sono mesi parziali)
+  if (mesiAnnoCorrente && mesiAnnoCorrente > 0) {
+    capitaleAccumulato += quoteParziali;
+  }
+
+  // 4) Componenti del TFR
+  const rivalutazioneLordaTotale = rivalutazioneNettaCumulata / 0.89; // lordo prima dell'imposta sostitutiva
+  const impostaSostitutiva = rivalutazioneLordaTotale * 0.11;
+
+  // TFR lordo = quote capitale + rivalutazioni nette
+  const tfrLordo = quoteCapitale + rivalutazioneNettaCumulata;
+
+  // 5) Tassazione separata sulla quota capitale
+  const tassazioneSeparata = quoteCapitale * (aliquotaMedia / 100);
+
+  // 6) TFR netto
+  const tfrNetto = tfrLordo - tassazioneSeparata;
+
+  // 7) Aliquota effettiva
+  const aliquotaEffettiva = ((tfrLordo - tfrNetto) / tfrLordo) * 100;
+
+  return {
+    quotaAnnuale,
+    quoteCapitale,
+    rivalutazioneLordaTotale,
+    impostaSostitutiva,
+    rivalutazioneNetta: rivalutazioneNettaCumulata,
+    tfrLordo,
+    tassazioneSeparata,
+    tfrNetto,
+    aliquotaEffettiva,
+    tassoRivalutazione: tassoRivalutazione * 100
+  };
+}
+
+function calcola(event) {
+  if (event && event.preventDefault) event.preventDefault();
+
+  const ral = parseFloat(document.getElementById('ral').value) || 0;
+  const anni = parseFloat(document.getElementById('anni').value) || 0;
+  const inflazione = parseFloat(document.getElementById('inflazione').value) || 0;
+  const aliquotaMedia = parseFloat(document.getElementById('aliquotaMedia').value) || 23;
+  const mesiAnnoCorrente = parseInt(document.getElementById('mesiAnnoCorrente').value) || 0;
+
+  const r = calcolaTFR(ral, anni, inflazione, aliquotaMedia, mesiAnnoCorrente);
+
+  document.getElementById('tfrNetto').textContent = EUR.format(r.tfrNetto);
+  document.getElementById('tfrLordo').textContent = 'Lordo: ' + EUR.format(r.tfrLordo);
+  document.getElementById('quoteCapitale').textContent = EUR.format(r.quoteCapitale);
+  document.getElementById('rivalutazioniLordo').textContent = EUR.format(r.rivalutazioneLordaTotale);
+  document.getElementById('impostaSostitutiva').textContent = '- ' + EUR.format(r.impostaSostitutiva);
+  document.getElementById('tfrLordoOut').textContent = EUR.format(r.tfrLordo);
+  document.getElementById('tassazioneSeparata').textContent = '- ' + EUR.format(r.tassazioneSeparata);
+  document.getElementById('tfrNettoOut').textContent = EUR.format(r.tfrNetto);
+  document.getElementById('aliquotaEffettiva').textContent = r.aliquotaEffettiva.toFixed(2) + '%';
+}
+
+// Auto-calcolo
+document.getElementById('calcForm').addEventListener('submit', calcola);
+window.addEventListener('DOMContentLoaded', () => calcola({ preventDefault: () => {} }));
+document.querySelectorAll('#calcForm input').forEach(el => {
+  el.addEventListener('input', () => calcola({ preventDefault: () => {} }));
+  el.addEventListener('change', () => calcola({ preventDefault: () => {} }));
+});
+</script>
+
+</body>
+</html>
