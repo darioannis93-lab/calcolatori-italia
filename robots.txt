@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://darioannis93-lab.github.io/calcolatori-italia/sitemap.xml
+Sitemap: https://calcolatoriitalia.it/sitemap.xml
