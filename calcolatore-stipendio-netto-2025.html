@@ -634,6 +634,31 @@
   </div>
 </div>
 
+<!-- MICRO-FEEDBACK -->
+<div class="container">
+  <div id="feedbackBox" style="max-width:1100px;margin:8px auto 0;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 20px;text-align:center;box-shadow:var(--shadow);">
+    <span style="font-weight:600;color:var(--text);">Ti è stato utile questo calcolatore?</span>
+    <span style="display:inline-flex;gap:10px;margin-left:12px;vertical-align:middle;">
+      <button type="button" onclick="inviaFeedback('si')" style="cursor:pointer;border:2px solid var(--border);background:#fff;border-radius:8px;padding:8px 16px;font:inherit;font-weight:600;">👍 Sì</button>
+      <button type="button" onclick="inviaFeedback('no')" style="cursor:pointer;border:2px solid var(--border);background:#fff;border-radius:8px;padding:8px 16px;font:inherit;font-weight:600;">👎 No</button>
+    </span>
+  </div>
+</div>
+<script>
+(function(){
+  var STRUMENTO = 'stipendio';
+  var KEY = 'feedback_' + STRUMENTO;
+  var box = document.getElementById('feedbackBox');
+  function grazie(){ box.innerHTML = '<span style="font-weight:600;color:var(--primary);">Grazie del feedback!</span>'; }
+  window.inviaFeedback = function(val){
+    try { if (typeof gtag === 'function') gtag('event', 'feedback_calcolatore', { utile: val, strumento: STRUMENTO }); } catch(e){}
+    try { localStorage.setItem(KEY, val); } catch(e){}
+    grazie();
+  };
+  try { if (localStorage.getItem(KEY)) grazie(); } catch(e){}
+})();
+</script>
+
 <!-- ============ AD SLOT: IN-ARTICLE (Responsive) ============ -->
 <div class="container">
   <div class="ad-slot">
