@@ -17,7 +17,7 @@
 <title>Calcolatore Stipendio Netto 2026 | IRPEF e INPS</title>
 <meta name="description" content="Calcola lo stipendio netto 2026 dal lordo: IRPEF, INPS, detrazioni e addizionali aggiornati. Gratuito, preciso e immediato.">
 <meta name="keywords" content="calcolatore stipendio netto 2026, calcolo IRPEF 2026, stipendio netto da lordo, calcolo busta paga, detrazioni lavoro dipendente, contributi INPS 2026, addizionale regionale IRPEF, calcolo netto mensile">
-<meta name="author" content="Calcolatore Stipendio Netto">
+<meta name="author" content="Calcolatori Italia">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="language" content="Italian">
 <meta name="revisit-after" content="7 days">
@@ -29,7 +29,7 @@
 <meta property="og:title" content="Calcolatore Stipendio Netto 2026 | Calcolo IRPEF Esatto">
 <meta property="og:description" content="Calcola lo stipendio netto 2026 con IRPEF, INPS, detrazioni e addizionali regionali. Strumento gratuito e preciso.">
 <meta property="og:url" content="https://calcolatoriitalia.it/calcolatore-stipendio-netto-2025.html">
-<meta property="og:site_name" content="Calcolatore Stipendio Netto">
+<meta property="og:site_name" content="Calcolatori Italia">
 <meta property="og:image" content="https://calcolatoriitalia.it/og-image.jpg">
 
 <!-- Twitter Card -->
@@ -64,15 +64,9 @@
     "price": "0",
     "priceCurrency": "EUR"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "ratingCount": "1284",
-    "bestRating": "5"
-  },
   "publisher": {
     "@type": "Organization",
-    "name": "Calcolatore Stipendio Netto"
+    "name": "Calcolatori Italia"
   }
 }
 </script>
@@ -473,6 +467,7 @@
   <a href="calcolatore-stipendio-netto-2025.html" style="color: #fff; text-decoration: none; margin: 0 12px; font-weight: 600;">Stipendio Netto</a>
   <a href="calcolatore-taeg-mutuo-2025.html" style="color: #fff; text-decoration: none; margin: 0 12px; font-weight: 600;">TAEG Mutuo</a>
   <a href="calcolatore-tfr-2025.html" style="color: #fff; text-decoration: none; margin: 0 12px; font-weight: 600;">TFR</a>
+  <a href="calcolatore-naspi-2026.html" style="color: #fff; text-decoration: none; margin: 0 12px; font-weight: 600;">NASpI</a>
   <a href="legali/contatti.html" style="color: #fff; text-decoration: none; margin: 0 12px; font-weight: 600;">Contatti</a>
 </div>
 
@@ -571,7 +566,7 @@
       </div>
 
       <div class="form-group">
-        <label for="figli">Figli a carico <span class="hint">- per detrazioni aggiuntive</span></label>
+        <label for="figli">Figli a carico <span class="hint">- figli dai 21 anni (per gli under 21 c'è l'Assegno Unico)</span></label>
         <select id="figli" name="figli">
           <option value="0" selected>Nessuno</option>
           <option value="1">1 figlio</option>
@@ -805,7 +800,7 @@
 <footer>
   <div class="container">
     <div>
-      <h4>Calcolatore Stipendio Netto 2026</h4>
+      <h4>Calcolatori Italia</h4>
       <p style="font-size:.88rem;color:#94a3b8;">Strumento gratuito per il calcolo dello stipendio netto in Italia, con aliquote IRPEF 2026 aggiornate, contributi INPS, detrazioni art. 13 TUIR e addizionali regionali.</p>
     </div>
     <div>
@@ -813,6 +808,7 @@
       <a href="calcolatore-taeg-mutuo-2025.html">Calcolatore TAEG Mutuo</a>
       <a href="calcolatore-tfr-2025.html">Calcolatore TFR</a>
       <a href="calcolatore-stipendio-netto-2025.html">Calcolatore Stipendio Netto</a>
+      <a href="calcolatore-naspi-2026.html">Calcolatore NASpI</a>
     </div>
     <div>
       <h4>Pagine legali</h4>
@@ -828,12 +824,12 @@
 
 <script>
 // =========================================================
-//   CALCOLO STIPENDIO NETTO 2025 - FORMULE UFFICIALI
+//   CALCOLO STIPENDIO NETTO 2026 - FORMULE UFFICIALI
 // =========================================================
 // Fonti:
 // - Art. 13 TUIR (D.P.R. 917/1986)
 // - Legge 197/2022 (Manovra 2023) e Legge 207/2024 (Manovra 2025)
-// - Circolare INPS 26/2025 e 27/2025 (aliquote contributive 2025)
+// - Circolare INPS 26/2026 e 27/2026 (aliquote contributive 2026)
 // - Aliquote IRPEF regionali 2025 (MEF)
 
 const EUR = new Intl.NumberFormat('it-IT', {
@@ -877,7 +873,7 @@ function calcIRPEFLorda(imponibile) {
   return irpef;
 }
 
-// --- 3) DETRAZIONI LAVORO DIPENDENTE art. 13 TUIR (2025) ---
+// --- 3) DETRAZIONI LAVORO DIPENDENTE art. 13 TUIR (2026) ---
 function calcDetrazioneLavoro(reddito) {
   if (reddito <= 0) return 0;
   if (reddito <= 15000) {
@@ -895,7 +891,7 @@ function calcDetrazioneLavoro(reddito) {
   return 0;
 }
 
-// --- 4) BONUS IRPEF 2025 (trattamento integrativo, ex bonus Renzi) ---
+// --- 4) BONUS IRPEF 2026 (trattamento integrativo, ex bonus Renzi) ---
 // Fonte: art. 1, c. 17, L. 208/2015 come modificato da L. 207/2024
 // Logica:
 //   - reddito <= 8.500:    TI = 7,1% × reddito (min ~603€)
@@ -921,20 +917,12 @@ function calcBonusIRPEF(reddito, irpefLorda, altreDetrazioni) {
   return Math.min(ti, 1200);
 }
 
-// --- 5) DETRAZIONI FIGLI A CARICO ---
+// DETRAZIONI FIGLI A CARICO (art. 12 TUIR, dopo l'Assegno Unico 2022)
+// Dal marzo 2022 le detrazioni per figli under 21 sono sostituite dall'Assegno Unico Universale.
+// Restano le detrazioni solo per i figli dai 21 anni in su: 950 euro/anno ciascuno, fino a 95.000 euro di reddito.
 function calcDetrazioneFigli(reddito, numFigli) {
-  if (numFigli <= 0) return 0;
-  // Importi 2025 (art. 12 TUIR)
-  // Per redditi fino a 95.000€: 1.220€ per primo figlio, 1.440€ per altri
-  // Semplificazione: primo figlio 1.220, successivi 1.440 ciascuno
-  let detrazione = 0;
-  if (reddito <= 95000) {
-    if (numFigli >= 1) detrazione += 1220;
-    if (numFigli >= 2) detrazione += (numFigli - 1) * 1440;
-    // Maggiorazione 3 figli (+220€ per figli oltre il primo, ma in realtà spread)
-    if (numFigli >= 3) detrazione += 200;
-  }
-  return detrazione;
+  if (numFigli <= 0 || reddito > 95000) return 0;
+  return numFigli * 950;
 }
 
 // --- 6) MAIN CALC ---
@@ -959,7 +947,7 @@ function calcola(event) {
   // Step 4: Detrazioni lavoro dipendente
   const detrazioneLavoro = calcDetrazioneLavoro(imponibile);
 
-  // Step 5: Bonus IRPEF 2025 (trattamento integrativo)
+  // Step 5: Bonus IRPEF 2026 (trattamento integrativo)
   const bonus = calcBonusIRPEF(imponibile, irpefLorda, detrazioneLavoro);
 
   // Step 6: Detrazioni figli a carico
